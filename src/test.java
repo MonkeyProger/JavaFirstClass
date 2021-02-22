@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -54,7 +53,7 @@ public class test {
             }
         }
         if (search != null){
-            System.out.println("Найдена книга жанра <Horror>: " + search.name + ", " + search.author + ", "
+            System.out.println("Найдена книга жанра <Horror>: " + search.title + ", " + search.author + ", "
                     + search.genre + ", " + search.location);
             System.out.println();}
 
@@ -68,7 +67,7 @@ public class test {
             System.out.println("По запросу <" + genre + "> найдено " + searcher.size() + " книги:");
             /////Можно добавить проверку на searcher.size() -> корректное отображение книга/книги/книг////
             for (Library.Book it : searcher)
-                System.out.println(it.name + ", " + it.author + ", " + it.genre + ", " + it.location);
+                System.out.println(it.title + ", " + it.author + ", " + it.genre + ", " + it.location);
         }
         else System.out.println("По данному запросу ничего не найдено.");
     }
